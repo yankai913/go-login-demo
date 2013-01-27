@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>simple login page</title>
+<script language="javascript" >
+function do_register() {
+	window.location.href="/register.do";
+}
+</script>
+</head>
+<body>
+<center>
+<h4>simple login page</h4>
+<form action="/doLogin.do" name="frm" method="post">
+<p>username: <input type="text" name=name /></p>
+<p>password: <input type="password" name="password" /></p>
+<input type="button" value="register"  onclick="do_register()"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="submit" />
+</form>
+</center>
+</body>
+</html>

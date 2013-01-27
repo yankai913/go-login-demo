@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>logined page </title>
+
+</head>
+<body>
+
+{{if .err_msg}}
+{{.err_msg}}
+<h3>logined failed</h3>
+{{end}}
+
+{{if .user}}
+<h3>logined success</h3>
+<p>id:{{.user.Id}}</p>
+<p>name:{{.user.Name}}</p>
+<p>address:{{.user.Address}}</p>
+<p>createtime:{{.user.CreateTime}}</p>
+<p>age:{{.user.Age}}</p>
+
+{{end}}
+<a href="/">返回</a>
+</body>
+</html>
